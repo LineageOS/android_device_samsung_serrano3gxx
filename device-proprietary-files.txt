@@ -7,3 +7,6 @@ lib/libsec-ril.so
 
 # Audio
 lib/libaudcal.so
+
+# GPS
+lib/libloc_api_v02.so
