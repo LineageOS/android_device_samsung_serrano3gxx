@@ -26,3 +26,8 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/serrano3gxx/overlay
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+
+# FM radio
+PRODUCT_PACKAGES += \
+    FM2 \
+    qcom.fmradio
