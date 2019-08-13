@@ -29,7 +29,8 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-I9190
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=serrano3gxx \
+    PRODUCT_NAME=serrano3gxx \
+    TARGET_DEVICE=serrano3g \
     PRIVATE_BUILD_DESC="serrano3gxx-user 4.4.2 KOT49H I9190XXUCNG1 release-keys"
 
 BUILD_FINGERPRINT := "samsung/serrano3gxx/serrano3g:4.4.2/KOT49H/I9190XXUCNG1:user/release-keys"
