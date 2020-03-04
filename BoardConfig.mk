@@ -22,10 +22,10 @@
 #
 
 # Inherit from common serrano
--include device/samsung/serrano-common/BoardConfigCommon.mk
+-include $(COMMON_PATH)/BoardConfigCommon.mk
 
 # Inherit from proprietary vendor
--include vendor/samsung/serrano3gxx/BoardConfigVendor.mk
+-include $(DEVICE_VENDOR_PATH)/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := serrano3g,serrano3gxx

@@ -15,13 +15,13 @@
 #
 
 # Inherit from serrano-common
-$(call inherit-product, device/samsung/serrano-common/serrano-common.mk)
+$(call inherit-product, $(COMMON_PATH)/serrano-common.mk)
 
 # Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/serrano3gxx/serrano3gxx-vendor.mk)
+$(call inherit-product, $(DEVICE_VENDOR_PATH)/serrano3gxx-vendor.mk)
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serrano3gxx/overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
